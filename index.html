@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📊 Fun with Tableau Insights!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .content {
+      padding: 30px;
+      text-align: center;
+    }
+    iframe {
+      width: 80%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+    .subcategories {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📈 Tableau Analytics Dashboard 🎉</h1>
+    <p>Explore interactive visual insights, powered by Tableau!</p>
+  </header>
+
+  <div class="content">
+    <h2>🚀 Embedded Tableau Dashboard</h2>
+    <p>Below is our fully interactive Tableau dashboard. Dive into the data!</p>
+    <iframe src="https://public.tableau.com/views/YOUR_DASHBOARD_LINK_HERE" allowfullscreen></iframe>
+
+    <div class="subcategories">
+      <div class="box">
+        <h3>📅 Yearly Trends</h3>
+        <p>Track how iPhone sales evolved year by year.</p>
+      </div>
+      <div class="box">
+        <h3>🌍 Regional Analysis</h3>
+        <p>See which regions performed best across all metrics.</p>
+      </div>
+      <div class="box">
+        <h3>🛍️ Sales Channels</h3>
+        <p>Compare online vs. physical store sales performance.</p>
+      </div>
+      <div class="box">
+        <h3>📊 Profit Breakdown</h3>
+        <p>Drill down into profitability by model, region and more.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
